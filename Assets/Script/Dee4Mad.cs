@@ -24,7 +24,7 @@ public class Dee4Mad : MonoBehaviour
 
     public void OnTriggerEnter()
     {
-        SceneManager.LoadScene("MainMenu");
+        SceneManager.LoadScene("GameOver");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
         GameController.RubyStonesCollected = 0;
