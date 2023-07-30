@@ -15,8 +15,9 @@ public class Player : MonoBehaviour
     public float maxStamina = 100f;
     public Slider staminaBar;
     public Camera playerCamera;
-    public float lookSpeed = 2.0f;
+    public float lookSpeed; //it used to be 2.0f lolz
     public float lookXLimit = 45.0f;
+    public SaveData saveData;
 
     CharacterController characterController;
     Vector3 moveDirection = Vector3.zero;
@@ -36,6 +37,7 @@ public class Player : MonoBehaviour
 
         // Set the max value of the stamina bar
         staminaBar.maxValue = maxStamina;
+        lookSpeed = saveData.playerSensitivity;
     }
 
     void Update()

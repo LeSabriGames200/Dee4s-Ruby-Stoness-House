@@ -29,16 +29,6 @@ public class PauseMenu : MonoBehaviour
                 Pause();
             }
         }
-        if (Input.GetKeyDown(KeyCode.Q)) 
-        {
-            if (GameIsPaused) 
-            {
-                Time.timeScale = 1f;
-                SceneManager.LoadScene("MainMenu");
-                Cursor.lockState = CursorLockMode.None;
-                Cursor.visible = true;
-            }
-        }
     }
 
     public void Resume() 
@@ -65,5 +55,6 @@ public class PauseMenu : MonoBehaviour
         SceneManager.LoadScene("MainMenu");
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
+        GameController.RubyStonesCollected = 0;
     }
 }
