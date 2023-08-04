@@ -15,6 +15,10 @@ public class GameController : MonoBehaviour
     public GameObject Dee4;
     public GameObject Dee4Angry;
     public GameObject WinTrigger;
+    public GameObject MiniMap;
+    public bool GetSecret = false;
+    public AudioSource audioSource;
+    public AudioClip explode;
 
     // Start is called before the first frame update
     void Start()
@@ -27,6 +31,8 @@ public class GameController : MonoBehaviour
         WinTrigger.SetActive(false);
         RenderSettings.fog = false;
         RenderSettings.ambientLight = Color.white;
+        MiniMap.SetActive(false);
+        GetSecret = false;
     }
 
     // Update is called once per frame
@@ -38,6 +44,15 @@ public class GameController : MonoBehaviour
         {
             Music.SetActive(false);
             SpoopMode();
+        }
+
+        if(Input.GetKey(KeyCode.Tab))
+        {
+            MiniMap.SetActive(true);
+        }
+        else
+        {
+            MiniMap.SetActive(false);
         }
     }
 
@@ -58,5 +73,11 @@ public class GameController : MonoBehaviour
     {
         Dee4.SetActive(false);
         Dee4Angry.SetActive(true);
+    }
+
+    public void GettingTheSecret()
+    {
+        GetSecret = true;
+        audioSource.PlayOneShot(explode);
     }
 }
