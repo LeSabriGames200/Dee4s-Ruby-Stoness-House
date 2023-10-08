@@ -16,9 +16,14 @@ public class GameController : MonoBehaviour
     public GameObject Dee4Angry;
     public GameObject WinTrigger;
     public GameObject MiniMap;
+    public GameObject Sun;
     public bool GetSecret = false;
     public AudioSource audioSource;
     public AudioClip explode;
+    public AudioClip Dee4MadAudio;
+
+    private bool SpoopModeActive = false;
+    private bool hasPlayedDee4MadAudio = false;
 
     // Start is called before the first frame update
     void Start()
@@ -33,6 +38,8 @@ public class GameController : MonoBehaviour
         RenderSettings.ambientLight = Color.white;
         MiniMap.SetActive(false);
         GetSecret = false;
+        SpoopModeActive = false;
+        hasPlayedDee4MadAudio = false;
     }
 
     // Update is called once per frame
@@ -43,7 +50,11 @@ public class GameController : MonoBehaviour
         if (RubyStonesCollected >= 2) 
         {
             Music.SetActive(false);
-            SpoopMode();
+            if (!hasPlayedDee4MadAudio)
+            {
+                SpoopMode();
+                hasPlayedDee4MadAudio = true;
+            }
         }
 
         if(Input.GetKey(KeyCode.Tab))
@@ -66,6 +77,7 @@ public class GameController : MonoBehaviour
             RenderSettings.fog = true;
             RenderSettings.fogColor = Color.black;
             WinTrigger.SetActive(true);
+            Destroy(Sun);
         }
     }
 
@@ -73,6 +85,8 @@ public class GameController : MonoBehaviour
     {
         Dee4.SetActive(false);
         Dee4Angry.SetActive(true);
+        audioSource.PlayOneShot(Dee4MadAudio);
+        SpoopModeActive = true;
     }
 
     public void GettingTheSecret()

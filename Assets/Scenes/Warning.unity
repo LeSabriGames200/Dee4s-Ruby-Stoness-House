@@ -447,8 +447,8 @@ MonoBehaviour:
 
     (Press Any Key To Begin)'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
+  m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

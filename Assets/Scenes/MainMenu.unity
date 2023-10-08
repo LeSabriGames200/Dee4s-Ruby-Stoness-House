@@ -780,7 +780,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 493.937, y: -308.5595}
+  m_AnchoredPosition: {x: 480.3, y: -273}
   m_SizeDelta: {x: 932.1185, y: 462.8867}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &405101128
@@ -817,13 +817,16 @@ MonoBehaviour:
     Weodobo - for his paint net
     with old bevel n stuff
 
-    Steven2Pm - Supported This Game IG
+    (including his awesome lip sync script! :D)
 
-    MystMan12
-    - Making Baldi''s Basics(this was inspired to the 1.3.2 how to play section lol)'
+    Steven2Pm
+    - Supported This Game IG
+
+    MystMan12 - Making Baldi''s Basics(this was inspired
+    to the 1.3.2 how to play section lol)'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1937,7 +1940,7 @@ MonoBehaviour:
     the 10 ruby stones then get to the elevator to win!'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2828,7 +2831,7 @@ MonoBehaviour:
   m_text: Back
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -3821,7 +3824,7 @@ MonoBehaviour:
     tab to look at the map'
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
-  m_sharedMaterial: {fileID: 2100000, guid: 125cb55b44b24c4393181402bc6200e6, type: 2}
+  m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -4032,8 +4035,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   saveData: {fileID: 11400000, guid: cf92f1d5d7a73a442939cb111208d1f7, type: 2}
   sunToggle: {fileID: 2031281736}
-  sensitivitySlider: {fileID: 1900762825}
   fullscreenToggle: {fileID: 1925238913}
+  sensitivitySlider: {fileID: 1900762825}
 --- !u!114 &1909402407
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4503,7 +4506,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: V1.1
+  m_text: V1.1.2
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
   m_sharedMaterial: {fileID: -4204900734746074181, guid: 4a74365a90b48314499d1c9c401e9c93, type: 2}
